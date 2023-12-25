@@ -20,8 +20,8 @@ ADMINS = int("5098097249")
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ['CHANNELS'].split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = ("Rokubotz")
-AUTH_CHANNEL = int("Rokubotz")
+auth_channel = ("-1001234567899")
+AUTH_CHANNEL = int("100123456789")
 
 # MongoDB information
 DATABASE_URI = ("mongodb+srv://ROKU:ROKU@cluster0.nxjre0s.mongodb.net/?retryWrites=true&w=majority")
@@ -30,7 +30,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
 default_start_msg = """
-**Hi, I'm Media Search bot**
+**Hi, I'm Anime Search bot**
 
 Here you can search files in inline mode. Just press following buttons and start searching.
 """
