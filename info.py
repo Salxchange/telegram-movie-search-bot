@@ -24,8 +24,8 @@ auth_channel = environ.get('AUTH_CHANNEL')
 AUTH_CHANNEL = int("-1001972455347")
 
 # MongoDB information
-DATABASE_URI = ['mongodb+srv://ROKU:ROKU@cluster0.nxjre0s.mongodb.net/?retryWrites=true&w=majority']
-DATABASE_NAME = ['Roku']
+DATABASE_URI = ("mongodb+srv://ROKU:ROKU@cluster0.nxjre0s.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = ("Roku")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
