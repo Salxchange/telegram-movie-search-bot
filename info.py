@@ -6,9 +6,9 @@ id_pattern = re.compile(r'^.\d+$')
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
 USER_SESSION = environ.get('USER_SESSION', 'User_Bot')
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+API_ID = int("29834158")
+API_HASH = ('f0b5805ef0f830a7a99a9c014df73bca')
+BOT_TOKEN = ('6547520597:AAHHuyrK4W2b21iMZxpJcrSerebD_Ye6Bgk')
 USERBOT_STRING_SESSION = environ.get('USERBOT_STRING_SESSION')
 
 # Bot settings
@@ -16,16 +16,16 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ['ADMINS'].split()]
+ADMINS = ('5098097249')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ['CHANNELS'].split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
-AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else auth_channel
+AUTH_CHANNEL = int("-1001972455347")
 
 # MongoDB information
-DATABASE_URI = environ['DATABASE_URI']
-DATABASE_NAME = environ['DATABASE_NAME']
+DATABASE_URI = ['mongodb+srv://ROKU:ROKU@cluster0.nxjre0s.mongodb.net/?retryWrites=true&w=majority']
+DATABASE_NAME = ['Roku']
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
