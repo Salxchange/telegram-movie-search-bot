@@ -20,8 +20,8 @@ ADMINS = int("5098097249")
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ['CHANNELS'].split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = ("-1001972455347")
-AUTH_CHANNEL = int("-1001972455347")
+auth_channel = ("@Rokubotz")
+AUTH_CHANNEL = int("@Rokubotz")
 
 # MongoDB information
 DATABASE_URI = ("mongodb+srv://ROKU:ROKU@cluster0.nxjre0s.mongodb.net/?retryWrites=true&w=majority")
